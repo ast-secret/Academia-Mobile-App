@@ -1,0 +1,24 @@
+<ion-view view-title="Aulas">
+  <!-- <ion-nav-buttons side="right">
+    <button type="button" class="button button-icon ion-ios-paperplane"></button>
+  </ion-nav-buttons> -->
+  <ion-content class="">
+    <ion-list>
+    	<div ng-repeat="aula in aulas">
+    		<ion-item class="item-divider">
+    			{{ aula.dia }}
+    	    </ion-item>
+    	    <div ng-repeat="horario in aula.horarios">
+    	    	<ion-item class="item-divider">
+    	    		{{horario.horario}}
+    	    	</ion-item>
+    	    	<div ng-repeat="aula in horario.aulas">
+    	    		<ion-item href="#/">
+    	    			{{ aula }}
+    	    		</ion-item>
+    	    	</div>
+    	    </div>
+    	</div>
+    </ion-list>
+  </ion-content>
+</ion-view>

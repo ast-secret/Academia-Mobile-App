@@ -1,0 +1,24 @@
+<ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">{{ currentAula.name}}</h1>
+      <button type="button" class="button button-stable" ng-click="closeModal()">Fechar</button>
+    </ion-header-bar>
+    <ion-content>
+      <p class="padding">
+        {{ currentAula.descricao }}
+      </p>
+      <ion-list>
+        <ion-item class="item-divider">
+          Horarios
+        </ion-item>
+        <ion-item>
+          <h2>Segunda-feira</h2>
+          <p>10:00, 11:00, 15:00, 18:30</p>
+        </ion-item>
+          <ion-item>
+          <h2>Terça-feira</h2>
+          <p>10:00, 11:00, 15:00, 18:30</p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-modal-view>
