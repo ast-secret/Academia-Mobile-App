@@ -21,6 +21,25 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf) format("truetype");
+}
+
+body{
+	font-family: 'Lato-Regular'!important;
+}
+
+.content{
+	background-color: #F2F2F2!important;
+}
+
+/*.card{
+-webkit-box-shadow: 0px 0px 4px 19px rgba(0,0,0,0.69)!important;
+-moz-box-shadow: 0px 0px 4px 19px rgba(0,0,0,0.69)!important;
+box-shadow: 0px 0px 4px 19px rgba(0,0,0,0.69)!important;
+}*/
+
 .custom-content{
 	background-image: url(../img/bg.gif);
 	background-size: cover;

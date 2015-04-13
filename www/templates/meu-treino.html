@@ -3,22 +3,24 @@
     <button type="button" class="button button-icon ion-android-list" ng-click="openModal()"></button>
   </ion-nav-buttons>
 
-  <ion-content>
-    <div class="text-center" style="background-color: #ecf0f1; color: #7f8c8d; padding: 15px;" >
+  <ion-content class="content">
+    <div class="text-center" style="background-color: #2ecc71; color: #FFF; padding: 15px;" >
         Fazer um grupo por dia.
     </div>
-    <ion-list ng-repeat="exercicio in meuTreino.exercicios"> 
-      <ion-item class="item-divider" style="border-top: 0;border-bottom: 0;">
-        {{exercicio.grupo}}
-      </ion-item>
-      <ion-item class="item-checkbox" ng-repeat="item in exercicio.exercicios">
-        
-        <label class="checkbox">
-          <input type="checkbox">
-        </label>
-        {{item}}
-      </ion-item>
+    <div class="padding">
+      <ion-list class="card" ng-repeat="exercicio in meuTreino.exercicios"> 
+        <ion-item class="item-divider" style="border-top: 0;border-bottom: 0;">
+          {{exercicio.grupo}}
+        </ion-item>
+        <ion-item class="item-checkbox" ng-repeat="item in exercicio.exercicios">
+          
+          <label class="checkbox">
+            <input type="checkbox">
+          </label>
+          {{item}}
+        </ion-item>
 
-    </ion-list>
+      </ion-list>
+    </div>
   </ion-content>
 </ion-view>

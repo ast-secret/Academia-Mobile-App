@@ -1,12 +1,12 @@
 <ion-view view-title="Comunicados">
-  <ion-content>
+  <ion-content class="content padding">
 
     <ion-refresher
       pulling-text="Puxe para atualizar..."
       on-refresh="doRefresh()">
     </ion-refresher>
 
-    <ion-list>
+    <ion-list class="card">
         <ion-item ng-repeat="comunicado in comunicados | orderBy:'-created'" ng-click="openModal(comunicado)">
             {{ comunicado.text }}
             <p><span am-time-ago="comunicado.created"></span></p>

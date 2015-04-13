@@ -1,8 +1,15 @@
 <ion-view view-title="Aulas">
-    <ion-content>
-        <ion-list>
-            <ion-item ng-repeat="aula in aulas|orderBy:'name'" ng-click="openModal(aula)">
-                {{ aula.name }} 
+    <ion-content class="content padding">
+        <ion-list class="card">
+            <ion-item
+            	ng-repeat="aula in aulas|orderBy:'name'"
+            	class="item-thumbnail-left"
+            	ng-click="openModal(aula)">
+            	
+                <img src="img/BODYPUMP_squared.fw.png">
+                <h2>{{ aula.name }}</h2>
+                <p>Duração: 55 minutos</p>
+                <p>Gasto calórico médio: Até 560 kcal</p>
             </ion-item>
         </ion-list>
     </ion-content>

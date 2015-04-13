@@ -8,8 +8,8 @@
         </ion-tab>
     </ion-tabs>
 
-    <ion-content class="has-subheader">
-        <ion-list>
+    <ion-content class="has-subheader content padding">
+        <ion-list class="card">
             <div ng-repeat="aula in filtered = (aulasWithHorarios | filter: query)">
                 <div ng-repeat="horario in aula.horarios">
                     <ion-item class="item-divider">
@@ -25,7 +25,7 @@
         </ion-list>
         <ion-list>
             <ion-item ng-if="filtered.length === 0">
-                Nenhuma aula hoje.
+                <small class="text-muted"><em>Nenhuma aula hoje.</em></small>
             </ion-item>
         </ion-list>
     </ion-content>
