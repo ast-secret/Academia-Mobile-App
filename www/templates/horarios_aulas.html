@@ -1,14 +1,15 @@
 <ion-view view-title="Horários">
 
-    <ion-tabs class="tabs-stable">
+
+
+    <ion-content class="has-subheader content padding">
+        <ion-tabs class="tabs-stable">
         <ion-tab
             title="{{item}}"
             on-select="changeTab($index)"
             ng-repeat="item in ['Dom', 'Seg', 'Ter', 'Quar', 'Qui', 'Sex', 'Sab']" >
         </ion-tab>
     </ion-tabs>
-
-    <ion-content class="has-subheader content padding">
         <ion-list class="card">
             <div ng-repeat="aula in filtered = (aulasWithHorarios | filter: query)">
                 <div ng-repeat="horario in aula.horarios">

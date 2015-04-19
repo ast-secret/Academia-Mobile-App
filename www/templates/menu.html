@@ -14,26 +14,31 @@
 
   <ion-side-menu side="left">
     <ion-content>
-      <ion-list>
-        <ion-item nav-clear menu-close href="#/app/horarios-aulas">
-          Horários
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/aulas">
-          Aulas
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/meu-treino">
-          Meu treino
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/comunicados">
-          Comunicados
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/caixa-de-sugestoes">
-          Caixa de sugestão
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/logout">
-          Sair
-        </ion-item>
-      </ion-list>
+        <div style="height: 140px; background-color: #EEE;" class="row text-center">
+            <div class="col col-center">
+                <img src="img/logo.png" width="80%" height="auto" alt="">    
+            </div>
+        </div>
+        <ion-list>
+            <ion-item nav-clear menu-close href="#/app/horarios-aulas" class="item-icon-left">
+                <span class="icon ion-android-calendar"></span> Horários
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/aulas" class="item-icon-left">
+                <span class="icon ion-android-apps"></span> Aulas
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/meu-treino" class="item-icon-left">
+                <span class="icon ion-android-clipboard"></span> Meu treino
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/comunicados" class="item-icon-left">
+                <span class="icon ion-android-mail"></span> Comunicados
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/caixa-de-sugestoes" class="item-icon-left">
+                <span class="icon ion-android-textsms"></span> Caixa de sugestão
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/logout" class="item-icon-left">
+                <span class="icon ion-android-exit"></span> Sair
+            </ion-item>
+        </ion-list>
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>
