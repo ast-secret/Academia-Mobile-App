@@ -2,3 +2,17 @@
 .textarea-big{
 	width: 100%!important;
 }
+
+.menu-list .list .item:first-child{
+	border: 0;
+}
+.menu-list .list .item{
+	border: #1F1F1F solid 1px;
+}
+.menu-list .list .item .item-content{
+	color: #FFF;
+}
+
+.menu-list .list .item .item-content, .menu{
+	background-color: #111;
+}

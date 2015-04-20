@@ -14,13 +14,42 @@
 
   <ion-side-menu side="left">
     <ion-content>
-        <div style="height: 140px; background-color: #EEE;" class="row text-center">
-            <div class="col col-center">
-                <img src="img/logo.png" width="80%" height="auto" alt="">    
+        <div style="background-color: #222; background-image: url(img/menu_bg.jpg); background-size: cover; background-position: center center; color: #FFF; padding: 10px 0 5px 0; margin-bottom: 10px;">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="img/logo.png" width="70%" height="auto" alt="">    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-center">
+                    <h5 style="margin-bottom: 0px; color: #FFF">Daniel de Faria</h5>
+                    <small>danielfpedro@gmail.com</small>
+                </div>
             </div>
         </div>
-        <ion-list>
+        <ion-list class="menu-list">
+<!--             <div class="item item-divider">
+                Opções
+            </div> -->
             <ion-item nav-clear menu-close href="#/app/horarios-aulas" class="item-icon-left">
+                <span class="icon ion-ios-calendar-outline"></span> Horários
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/aulas" class="item-icon-left">
+                <span class="icon ion-ios-keypad-outline"></span> Aulas
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/meu-treino" class="item-icon-left">
+                <span class="icon ion-ios-folder-outline"></span> Meu treino
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/comunicados" class="item-icon-left">
+                <span class="icon ion-ios-list-outline"></span> Comunicados
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/app/caixa-de-sugestoes" class="item-icon-left">
+                <span class="icon ion-ios-chatbubble-outline"></span> Caixa de sugestão
+            </ion-item>
+            <ion-item nav-clear menu-close href="#/logout" class="item-icon-left">
+                <span class="icon ion-log-out"></span> Sair
+            </ion-item>
+<!--             <ion-item nav-clear menu-close href="#/app/horarios-aulas" class="item-icon-left">
                 <span class="icon ion-android-calendar"></span> Horários
             </ion-item>
             <ion-item nav-clear menu-close href="#/app/aulas" class="item-icon-left">
@@ -37,8 +66,9 @@
             </ion-item>
             <ion-item nav-clear menu-close href="#/logout" class="item-icon-left">
                 <span class="icon ion-android-exit"></span> Sair
-            </ion-item>
+            </ion-item> -->
         </ion-list>
+        
     </ion-content>
   </ion-side-menu>
 </ion-side-menus>
