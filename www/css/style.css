@@ -16,3 +16,12 @@
 .menu-list .list .item .item-content, .menu{
 	background-color: #111;
 }
+
+.scroll{
+	height: 100%;
+}
+.platform-android .scroll-content{
+	margin-top: 0;
+	margin-bottom:0;
+	padding-top:0;
+}

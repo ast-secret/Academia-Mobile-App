@@ -25,7 +25,7 @@ angular.module('starter', [
   });
 })
 
-.constant('DEFAULT_ROUTE', 'app.horarios-aulas')
+.constant('DEFAULT_ROUTE', 'app.aulas')
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
